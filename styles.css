@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin-top: 60px;
+}
+header {
+  margin: 0 0 60px;
+  text-align: center;
+}
+h1 {
+  font-size: 26px;
+  margin-bottom: 30px
+}
+#tictactoe {
+  display: inline-block;
+  margin: 40px auto;
+}
+#choice {
+  margin-top: 100px;
+}
+#reset {
+  margin-top: 40px;
+}
+.square {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(240, 240, 240);
+  border: 2px solid rgb(220, 220, 220);
+  color: rgb(240, 240, 240);
+  margin: 0 5px 10px;
+  padding: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+.square.Xplayed {
+  background-color: #d62c1a;
+  color: #d62c1a;
+}
+.square.Oplayed {
+  background-color: #217dbb;
+  color: #217dbb;
+}
+.square.Xplayed:after, .square.Oplayed:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+.square.Oplayed:after {
+  content: "O";
+}
+.square.Xplayed:after {
+  content: "X";
+}
